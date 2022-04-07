@@ -27,11 +27,13 @@
     <section>
       <div class="container my-5">
         <div class="row">
+          <!-- banner-image -->
           <div class="col-lg-6">
             <img class="w-100 h-100" src="images/banner.jpg" alt="" />
           </div>
           <div class="col-lg-6">
             <div class="p-3 bg-light text-center">
+              <!-- Incomes section -->
               <h4 class="fw-bold">Income</h4>
               <div class="col">
                 <span class="fw-bold">Income:</span>
@@ -41,6 +43,7 @@
                   class="w-50 my-3 border-1 border-info rounded"
                 />
               </div>
+              <!-- Expenses section -->
               <h4 class="fw-bold">Expenses</h4>
               <div class="col">
                 <span class="fw-bold">Food:</span>
@@ -76,6 +79,7 @@
                 <h4>Total Expenses:<span id="total-expenses"></span></h4>
                 <h4>Balance:<span id="rest-amount"></span></h4>
               </div>
+              <!-- saving-section -->
               <div class="col">
                 <span class="fw-bold">Save:</span>
                 <input
@@ -87,6 +91,9 @@
                 <button id="save-btn" class="btn btn-primary">Save</button>
               </div>
               <div class="my-2">
+                <p class="fw-bold text-danger" id="error-items">
+                  SavingAmount Greater than BalanceAmount!!!
+                </p>
                 <h4>Saving Amount:<span id="save-amount"></span></h4>
                 <h4>Remaining Amount:<span id="remaining-amount"></span></h4>
               </div>
