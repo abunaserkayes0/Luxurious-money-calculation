@@ -37,34 +37,54 @@
                 <span class="fw-bold">Income:</span>
                 <input
                   type="text"
-                  id=""
-                  class="w-50 my-3"
-                  aria-describedby="passwordHelpInline"
+                  id="income-amount"
+                  class="w-50 my-3 border-1 border-info rounded"
                 />
               </div>
               <h4 class="fw-bold">Expenses</h4>
               <div class="col">
                 <span class="fw-bold">Food:</span>
-                <input type="text" id="food" class="w-50 my-3" />
+                <input
+                  type="text"
+                  id="food-amount"
+                  class="w-50 my-3 border-1 border-info rounded"
+                />
               </div>
               <div class="col">
                 <span class="fw-bold">Rent:</span>
-                <input type="text" id="rent" class="w-50 my-3" />
+                <input
+                  type="text"
+                  id="rent-amount"
+                  class="w-50 my-3 border-1 border-info rounded"
+                />
               </div>
               <div class="col">
                 <span class="fw-bold">Cloth:</span>
-                <input type="text" id="clothes" class="w-50 my-3" />
+                <input
+                  type="text"
+                  id="clothes-amount"
+                  class="w-50 my-3 border-1 border-info rounded"
+                />
               </div>
-              <button class="btn btn-primary fw-bold">Calculate</button>
+              <p class="fw-bold text-danger" id="error-message">
+                Total Expenses Greater than incomeAmount!!!
+              </p>
+              <button id="calculate-btn" class="btn btn-primary fw-bold">
+                Calculate
+              </button>
               <div class="my-2">
-                <h4>Total Expenses:</h4>
-                <h4>Balance:</h4>
+                <h4>Total Expenses:<span id="total-expenses"></span></h4>
+                <h4>Balance:<span id="rest-amount"></span></h4>
               </div>
               <div class="col">
                 <span class="fw-bold">Save:</span>
-                <input type="text" id="clothes" class="w-25 my-3" />
+                <input
+                  type="text"
+                  id="save-amount"
+                  class="w-25 my-3 border-1 border-info rounded"
+                />
                 <span class="fw-bold">%</span>
-                <button class="btn btn-primary">Save</button>
+                <button id="save-btn" class="btn btn-primary">Save</button>
               </div>
               <div class="my-2">
                 <h4>Saving Amount:</h4>
