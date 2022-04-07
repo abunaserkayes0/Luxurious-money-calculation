@@ -14,4 +14,11 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const totalExpenses = document.getElementById("total-expenses");
   totalExpenses.innerText = totalAmount;
 
+  if (incomeAmountValue < totalAmount) {
+    document.getElementById("error-message").style.display = "block";
+  } else {
+    const restAmount = document.getElementById("rest-amount");
+    const restBalance = incomeAmountValue - totalAmount;
+    restAmount.innerText = restBalance;
+  }
 });
